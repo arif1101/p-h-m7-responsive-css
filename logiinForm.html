@@ -6,13 +6,56 @@
     <title>LoginForm</title>
 
     <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
 
-        
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .login-form-container{
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+        }
+
+        .login-form input{
+            margin-top: 20px;
+        }
 
     </style>
 
 </head>
 <body>
-    
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+        </div>
+
+        <a href="">Login</a>
+    </nav>
+
+    <section class="login-form-container">
+        <form class="login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your Password" required>
+            <input type="submit" value="Login" required>
+        </form>
+    </section>
 </body>
 </html>
